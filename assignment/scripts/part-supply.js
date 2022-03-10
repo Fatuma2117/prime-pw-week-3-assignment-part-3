@@ -33,6 +33,16 @@ console.log(supplyChanges);
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.' 
 console.log('6. Showing supplyChanges...');
+for (let i = 0; i<supplyChanges.length; i++){
+    if (i > 0) {
+        console.log('Added x parts');
+    };
+    // like the practical example match
+    // x = value from supplyChanges
+    // if i>0 , log 'added (positive number) parts
+}
+
+
 
 
 
