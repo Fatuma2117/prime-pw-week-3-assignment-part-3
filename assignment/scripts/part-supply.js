@@ -27,8 +27,6 @@ console.log(' Expect number 11 removed:', supplyChanges.pop());
 console.log('5. Adding 25 to supplyChanges.');
 supplyChanges.push(25)
 console.log(supplyChanges);
-
-
 // 6. Write a `for` loop that shows each value in the 'supplyChanges' array
 //    Use a console.log formatted as follows, where x is the value from the array
 //    - if it is a positive number (greater than 0), log 'Added x parts.' 
@@ -64,5 +62,6 @@ let boxesFilled = 0
 while (partsCount >= 7) {
     partsCount -= 7;
     boxesFilled += 1;
-    console.log(`Number of boxes filled: ${boxesFilled}, left over parts: ${partsCount}`);
 }
+    
+    console.log(`Number of boxes filled: ${boxesFilled}, left over parts: ${partsCount}`);
