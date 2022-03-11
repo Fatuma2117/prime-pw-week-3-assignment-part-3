@@ -64,5 +64,5 @@ let boxesFilled = 0
 while (partsCount >= 7) {
     partsCount -= 7;
     boxesFilled += 1;
-    console.log(`Number of boxes filled: ${boxesFilled}, left over parts ${partsCount}`);
+    console.log(`Number of boxes filled: ${boxesFilled}, left over parts: ${partsCount}`);
 }
