@@ -10,7 +10,7 @@ console.log('Expect 40', partsNeeded);
 // 2. Create a variable call 'supplyChanges' set it to an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11
 console.log('2. Array of supplyChanges:');
-let supplyChanges = [3,5,0,7,11]
+let supplyChanges = [3,5,-6,0,7,11]
 console.log('Expect the list of numbers', supplyChanges);
 
 // 3. Console log the value of the second item in the 'supplyChanges' array
@@ -35,6 +35,22 @@ console.log(supplyChanges);
 console.log('6. Showing supplyChanges...');
 
 
+for (let i = 0; i < supplyChanges.length; i++) {
+     console.log(supplyChanges[i]);
+     if (supplyChanges[i] > '0' ){
+         console.log('Added  Parts');
+     }
+    
+}
+// x is the value in supplyChanges that fits these conditionals
+// if x> 0, console logs 'added x( all values in array >0)'
+//if x=0, logs 'No Change.'
+//if x= 0--, logs Removed -6 parts
+
+
+
+
+
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop. 
@@ -47,7 +63,7 @@ let total = 0
 for (let i = 0; i < supplyChanges.length; i++) {
      total += supplyChanges[i];  
 }
-console.log('Expect total of 40:' , total);
+console.log('Expect total of 34:' , total);
 
 
 // 9. We have a large stash of parts in our warehouse that we 
