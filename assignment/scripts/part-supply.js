@@ -36,7 +36,6 @@ console.log('6. Showing supplyChanges...');
 
 
 for (let i = 0; i < supplyChanges.length; i++) {
-     console.log(supplyChanges[i]);
      if (supplyChanges[i] > 0 ){
          y = supplyChanges[i]
          console.log(`Added ${y}  Parts`);
@@ -47,40 +46,27 @@ for (let i = 0; i < supplyChanges.length; i++) {
                 x = supplyChanges[i]
          console.log(`Removed ${x} Parts`);   
      }
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
+//  console.log(supplyChanges[i]);
 // x is the value in supplyChanges that fits these conditionals
 // if x> 0, console logs 'added x( all values in array >0)'
 //if x=0, logs 'No Change.'
 //if x= 0--, logs Removed -6 parts
-
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop. 
 console.log('7. Showing supplyChanges with "for of" loop');
-let pos 
-let neg  
-for ( x of supplyChanges) {
-    if (x < '0' )
-      pos = x
-        console.log('Added Parts');
+for (index of supplyChanges) {
+    if (index > 0 ){
+        y = index
+        console.log(`Added ${y}  Parts`);
+       } if (index === 0){
+        console.log('No Changes'); }
+           if (index < 0) {
+               x = index
+        console.log(`Removed ${x} Parts`);   
+    }
 }
-
-
-
-
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('8. Total supplies available is:');
@@ -89,8 +75,6 @@ for (let i = 0; i < supplyChanges.length; i++) {
      total += supplyChanges[i];  
 }
 console.log('Expect total of 34:' , total);
-
-
 // 9. We have a large stash of parts in our warehouse that we 
 //    need to box up and get ready for shipment. 
 //    There are 572 parts in total, and each box holds 7 parts.
@@ -104,5 +88,4 @@ while (partsCount >= 7) {
     partsCount -= 7;
     boxesFilled += 1;
 }
-    
-    console.log(`Number of boxes filled: ${boxesFilled}, left over parts: ${partsCount}`);
+ console.log(`Number of boxes filled: ${boxesFilled}, left over parts: ${partsCount}`);
