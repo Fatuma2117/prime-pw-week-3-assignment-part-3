@@ -37,18 +37,30 @@ console.log('6. Showing supplyChanges...');
 
 for (let i = 0; i < supplyChanges.length; i++) {
      console.log(supplyChanges[i]);
-     if (supplyChanges[i] > '0' ){
-         console.log('Added  Parts');
-     }
-     if (supplyChanges[i] === '0'){
-         console.log('No Changes');
-     }
-     if (supplyChanges[i] < '0') {
-         console.log('Removed parts');
-         
+     if (supplyChanges[i] > 0 ){
+         y = supplyChanges[i]
+         console.log(`Added ${y}  Parts`);
+        }
+         if (supplyChanges[i] === 0){
+         console.log('No Changes'); }
+            if (supplyChanges[i] < 0) {
+                x = supplyChanges[i]
+         console.log(`Removed ${x} Parts`);   
      }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
 // x is the value in supplyChanges that fits these conditionals
 // if x> 0, console logs 'added x( all values in array >0)'
 //if x=0, logs 'No Change.'
