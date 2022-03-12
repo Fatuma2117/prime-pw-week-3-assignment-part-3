@@ -40,6 +40,13 @@ for (let i = 0; i < supplyChanges.length; i++) {
      if (supplyChanges[i] > '0' ){
          console.log('Added  Parts');
      }
+     if (supplyChanges[i] === '0'){
+         console.log('No Changes');
+     }
+     if (supplyChanges[i] < '0') {
+         console.log('Removed parts');
+         
+     }
     
 }
 // x is the value in supplyChanges that fits these conditionals
@@ -47,14 +54,20 @@ for (let i = 0; i < supplyChanges.length; i++) {
 //if x=0, logs 'No Change.'
 //if x= 0--, logs Removed -6 parts
 
-
-
-
-
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop. 
 console.log('7. Showing supplyChanges with "for of" loop');
+let pos 
+let neg  
+for ( x of supplyChanges) {
+    if (x < '0' )
+      pos = x
+        console.log('Added Parts');
+}
+
+
+
 
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
